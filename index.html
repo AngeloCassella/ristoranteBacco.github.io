@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menu del Ristorante</title>
+</head>
+<body>
+    <div id="mainPage" class="page active">
+        <div class="welcome-image">
+            <img src="images/welcome.jpg" alt="Benvenuti al Ristorante">
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary" onclick="showCategoryPage('pizzePage')">Pizze</button>
+            <button class="btn btn-primary" onclick="showCategoryPage('bevandePage')">Bevande</button>
+            <button class="btn btn-primary" onclick="showCategoryPage('antipastiPage')">Antipasti</button>
+            <button class="btn btn-primary" onclick="showCategoryPage('primiPage')">Primi</button>
+            <button class="btn btn-primary" onclick="showCategoryPage('secondiPage')">Secondi</button>
+        </div>
+    </div>
+
+    <!-- Pages for each category -->
+    <div id="pizzePage" class="page"><div id="pizzeProducts" class="d-flex flex-wrap justify-content-center"></div></div>
+    <div id="bevandePage" class="page"><div id="bevandeProducts" class="d-flex flex-wrap justify-content-center"></div></div>
+    <div id="antipastiPage" class="page"><div id="antipastiProducts" class="d-flex flex-wrap justify-content-center"></div></div>
+    <div id="primiPage" class="page"><div id="primiProducts" class="d-flex flex-wrap justify-content-center"></div></div>
+    <div id="secondiPage" class="page"><div id="secondiProducts" class="d-flex flex-wrap justify-content-center"></div></div>
+
+    <!-- Footer with restaurant info and social links -->
+    <footer class="text-center mt-4">
+        <div>
+            <img src="images/logo.jpg" alt="Logo del Ristorante" style="max-width: 100px;">
+        </div>
+        <h3></h3>
+        <p>Email: info@ristorante.com</p>
+        <p>
+            <a href="https://www.instagram.com/ristorante" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/ristorante" target="_blank">Facebook</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
